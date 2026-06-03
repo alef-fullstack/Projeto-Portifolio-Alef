@@ -17,9 +17,8 @@ html{
 
 p{
     color: #15b2c6;
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 30px;
+    margin-left: 80px;
+    font-size: 24px;
 }
 
 header{
@@ -29,15 +28,16 @@ header{
     gap: 30px;
     align-items: center;
     justify-content: end;
-    margin-right: 120px;
+    margin-right: 80px;
+    margin-top: 40px;
     
 }
 
 button{
     cursor: pointer;
     background-color: #1788a1;
-    width: 100px;
-    height: 30px;
+    width: 80px;
+    height: 25px;
     border-radius: 10px;
     border: none;
     font-weight: bold;
@@ -59,42 +59,43 @@ button:hover{
 }
 
 div{
-    margin: 70px 0 0 180px;
+    margin: 30px 0 0 80px;
 }
 
 h1{
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 35px;
     width: 300px;
     text-align: center;
 }
 
 .descrition{
-    font-size: 20px;
-    width: 400px;
+    margin-top: 15px;
+    font-size: 17px;
+    width: 300px;
     text-align: justify;
     color: #23f1ea;
 }
 
 .projects{
-    margin-top: 15px;
-    margin-left: 285px;
+    margin-top: 5px;
+    margin-left: 250px;
     color: #000000;
-    width: 170px;
-    height: 45px;
-    font-size: 20px;
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
 }
 
 .container-icons{
-    margin-top: 150px;
+    margin-top: 70px;
     display: flex;
-    gap: 150px;
-    margin-left: 500px;
+    gap: 100px;
+    justify-content: center;
 }
 
 .icons{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 
 }
 
@@ -103,4 +104,8 @@ h1{
     0 0 15px #2a6765;
     transform:translateY(-2px) rotateX(360deg);
     border-radius: 10px;
+}
+
+.direits{
+    font-size: 10px;
 }
