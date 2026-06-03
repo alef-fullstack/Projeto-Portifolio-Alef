@@ -88,8 +88,8 @@ h1{
 .container-icons{
     margin-top: 150px;
     display: flex;
-    gap: 100px;
-    margin-left: 400px;
+    gap: 150px;
+    margin-left: 500px;
 }
 
 .icons{
