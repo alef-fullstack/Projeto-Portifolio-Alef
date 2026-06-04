@@ -143,8 +143,8 @@ h1{
     .container-icons{
         display: flex;
         gap: 18px;
-        margin-top: 400px;
-        margin-bottom: 30px;
+        margin-top: 350px;
+        margin-bottom: 10px;
     }
 
     .direits{
