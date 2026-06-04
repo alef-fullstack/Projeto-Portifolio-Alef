@@ -110,3 +110,46 @@ h1{
 .direits{
     font-size: 10px;
 }
+
+@media screen and (max-width: 500px) {
+
+    header{
+       margin: 20px
+    }
+
+    p{
+        margin-left: 10px;
+    }
+
+    div{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .descrition{
+        font-size: 15px;
+
+    }
+
+    .projects{
+        margin-top: px;
+        margin-left: 260px;
+    }
+
+    .container-icons{
+        display: flex;
+        gap: 18px;
+        margin-top: 400px;
+        margin-bottom: 30px;
+    }
+
+    .direits{
+        color: #23f1ea;
+        font-size: 15px;
+    }
+
+}
