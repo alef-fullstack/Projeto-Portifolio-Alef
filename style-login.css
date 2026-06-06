@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+}
+
+html{
+    background-image: url("assets/backgroud.png");
+     background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* CORRIGIDO: Adicionado o ponto (.) */
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    width: 850px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0; /* CORRIGIDO: Adicionado os dois-pontos (:) */
+    height: 100%;
+    transition: all .6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+form {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    background: #f4f4f4;
+    border: none;
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    background: #eee;
+}
+
+button {
+    border-radius: 25px;
+    background: #0993bd;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 45px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform .6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: linear-gradient(135deg, #086d8c, #2bc2f0); /* CORRIGIDO: Adicionado vírgula */
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%; /* CORRIGIDO: Removido o sinal de menos (-) */
+    width: 200%;
+    transform: translateX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    padding: 0 40px;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+    transition: transform .3s ease-in-out; /* ADICIONADO: Para suavizar o texto entrando */
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+}
+
+.ghost {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
