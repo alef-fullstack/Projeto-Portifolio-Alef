@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Álbuns de Fotos</title>
+    <title>Projetos - Dev Alef</title>
     <link rel="stylesheet" href="style-galeria.css">
 </head>
+
 <body>
 
     <header>
@@ -14,65 +16,78 @@
     </header>
 
     <main class="container-galeria">
-        
-        <section class="secao-albuns">
+
+        <section class="secao-albuns" id="secao-albuns">
 
             <div class="grid-albuns">
-                
-                <div class="card-album">
-                    <img src="https://picsum.photos/300/200?random=1" alt="Capa do Álbum 1">
+
+                <div class="card-album" data-album="projeto1">
+                    <img src="./assets/img-projets/project-generator-ia/Desktop.png" alt="Capa do Álbum 1">
                     <div class="album-info">
-                        <h3>Projeto 1</h3>
-                        <p>12 fotos</p>
+                        <h3>Gerador IA</h3>
+                        <p>2 fotos</p>
                     </div>
                 </div>
 
-                 <div class="card-album">
-                    <img src="https://picsum.photos/300/200?random=1" alt="Capa do Álbum 1">
+                <div class="card-album" data-album="projeto2">
+                    <img src="./assets/img-projets/projet-convert-currency/desktop.png" alt="Capa do Álbum 2">
                     <div class="album-info">
-                        <h3>Projeto 2</h3>
-                        <p>12 fotos</p>
+                        <h3>Conversor de moedas</h3>
+                        <p>2 fotos</p>
                     </div>
                 </div>
 
-                 <div class="card-album">
-                    <img src="https://picsum.photos/300/200?random=1" alt="Capa do Álbum 1">
+                <div class="card-album" data-album="projeto3">
+                    <img src="./assets/img-projets/project-joken-po/desktop.png" alt="Capa do Álbum 3">
                     <div class="album-info">
-                        <h3>Projeto 3</h3>
-                        <p>12 fotos</p>
+                        <h3>Joken pô!</h3>
+                        <p>2 fotos</p>
                     </div>
                 </div>
 
-                <div class="card-album">
-                    <img src="https://picsum.photos/300/200?random=2" alt="Capa do Álbum 2">
+                <div class="card-album" data-album="projeto4">
+                    <img src="./assets/img-projets/project-we-care/monitor.png" alt="Capa do Álbum 4">
                     <div class="album-info">
-                        <h3>Projeto 4</h3>
-                        <p>8 fotos</p>
+                        <h3>We Care</h3>
+                        <p>2 fotos</p>
                     </div>
                 </div>
 
-                <div class="card-album">
-                    <img src="https://picsum.photos/300/200?random=3" alt="Capa do Álbum 3">
+                <div class="card-album" data-album="projeto5">
+                    <img src="./assets/img-projets/project-wide-coverage-location/desktop.png" alt="Capa do Álbum 5">
                     <div class="album-info">
-                        <h3>Projeto 5</h3>
-                        <p>24 fotos</p>
+                        <h3>Wide Coverage Location</h3>
+                        <p>2 fotos</p>
+                    </div>
+                </div>
+
+
+                <div class="card-album" data-album="projeto6">
+                    <img src="./assets/img-projets/project-easy-shopping/desktop.png" alt="Capa do Álbum 6">
+                    <div class="album-info">
+                        <h3>Easy Shopping</h3>
+                        <p>2 fotos</p>
                     </div>
                 </div>
 
             </div>
         </section>
-
-        <hr> <section class="secao-fotos">
-            <h2>Fotos do Álbum: <span id="nome-album-ativo">Projeto 1</span></h2>
-            <div class="grid-fotos">
-                <div class="foto-item"><img src="https://picsum.photos/400/400?random=11" alt="Foto 1"></div>
-                <div class="foto-item"><img src="https://picsum.photos/400/400?random=12" alt="Foto 2"></div>
-                <div class="foto-item"><img src="https://picsum.photos/400/400?random=13" alt="Foto 3"></div>
-                <div class="foto-item"><img src="https://picsum.photos/400/400?random=14" alt="Foto 4"></div>
+        <section class="secao-fotos hidden" id="secao-fotos">
+            <div class="topo-fotos">
+                <button id="btn-voltar-albuns">⬅ Voltar para os Álbuns</button>
+                <h2>Fotos do album: <span id="nome-album-ativo"></span>"</h2>
             </div>
+            <div class="grid-fotos" id="grid-fotos-dinamico"></div>
         </section>
 
     </main>
 
+    <div id="foto-modal" class="modal hidden">
+        <span id="btn-fechar-modal">&times;</span>
+        <img id="foto-ampliada" src="" alt="Foto Ampliada">
+    </div>
+
 </body>
+<script src="./galeria.js"></script>
+
 </html>

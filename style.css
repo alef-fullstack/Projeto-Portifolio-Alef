@@ -59,7 +59,9 @@ button:hover{
     background-color: #1aa6bf;
     box-shadow: 0 0 8px #14e3dc,
     0 0 15px #2a6765;
-    transform:translateY(-2px) rotateX(360deg);
+     transform-origin: bottom left;
+   transform: rotate(-2deg);
+    
 
 }
 
@@ -108,9 +110,11 @@ h1{
 .icons:hover{
      box-shadow: 0 0 20px #14e3dc,
     0 0 15px #2a6765;
-    transform:translateY(-2px) rotateX(360deg);
     border-radius: 10px;
-    transform: .3s;
+    transform-origin: bottom left;
+   transform: rotate(-10deg);
+   transition: transform .3s ease-in;
+    
 }
 
 .direits{
