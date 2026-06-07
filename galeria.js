@@ -2,7 +2,7 @@
 const bancoDeFotos = {
     projeto1: [
         "./assets/img-projets/project-generator-ia/Desktop.png",
-        "./assets/img-projets/project-generator-ia/funcionando.png",
+        "./assets/img-projets/project-generator-ia/Funcionando.png",
     ],
     projeto2: [
         "./assets/img-projets/projet-convert-currency/desktop.png",
