@@ -1,29 +1,41 @@
  /*(Aqui cadastra os links das fotos de cada álbum)*/
 const bancoDeFotos = {
-    projeto1: [
+    projeto1: {
+        link: "https://alef-fullstack.github.io/CSS-Gerador-com-IA/",
+    fotos: [
         "./assets/img-projets/project-generator-ia/Desktop.png",
         "./assets/img-projets/project-generator-ia/Funcionando.png",
-    ],
-    projeto2: [
+    ]},
+    projeto2: {
+        link: "https://alef-fullstack.github.io/Projeto-Conversor-de-Moedas/",
+    fotos:[
         "./assets/img-projets/projet-convert-currency/desktop.png",
         "./assets/img-projets/projet-convert-currency/funcionando.png", 
-    ],
-    projeto3: [
+    ]},
+    projeto3: {
+        link: "https://alef-fullstack.github.io/Projeto-JOCKENPO/",
+    fotos:[
         "./assets/img-projets/project-joken-po/desktop.png",
         "./assets/img-projets/project-joken-po/funcionando.png",   
-    ],
-    projeto4: [
+    ]},
+    projeto4: {
+        link: "https://alef-fullstack.github.io/Projeto-WE-CARE/",
+    fotos: [
         "./assets/img-projets/project-we-care/monitor.png",
         "./assets/img-projets/project-we-care/celular.png",   
-    ],
-    projeto5: [
+    ]},
+    projeto5: {
+        link: "https://alef-fullstack.github.io/Projeto-Wide-Coverage-Location/",
+    fotos: [
         "./assets/img-projets/project-wide-coverage-location/desktop.png",
         "./assets/img-projets/project-wide-coverage-location/mobile.png",    
-    ],
-    projeto6: [
+    ]},
+    projeto6: {
+        link: "https://alef-fullstack.github.io/Projeto-Easy-Shopping/",
+    fotos: [
         "./assets/img-projets/project-easy-shopping/desktop.png",
         "./assets/img-projets/project-easy-shopping/mobile.png",
-    ]
+    ]}
 };
 
 // 2. Elementos do HTML
@@ -33,10 +45,12 @@ const gridFotosDinamico = document.getElementById('grid-fotos-dinamico');
 const nomeAlbumAtivo = document.getElementById('nome-album-ativo');
 const btnVoltarAlbuns = document.getElementById('btn-voltar-albuns');
 const cardsAlbuns = document.querySelectorAll('.card-album');
+const btnAcessarSite = document.getElementById('btn-acessar-site')
 
 const fotoModal = document.getElementById('foto-modal');
 const fotoAmpliada = document.getElementById('foto-ampliada');
 const btnFecharModal = document.getElementById('btn-fechar-modal');
+
 
 // 3. Abrir o Álbum
 cardsAlbuns.forEach(card => {
@@ -46,10 +60,11 @@ cardsAlbuns.forEach(card => {
         
         gridFotosDinamico.innerHTML = "";
 
-        const fotosDoAlbum = bancoDeFotos[idDoAlbum];
+        const dadosDoAlbum = bancoDeFotos[idDoAlbum];
 
-        if (fotosDoAlbum) {
-            fotosDoAlbum.forEach(linkDaFoto => {
+        if (dadosDoAlbum) {
+            btnAcessarSite.href = dadosDoAlbum.link;
+            dadosDoAlbum.fotos.forEach(linkDaFoto => {
                 const divItem = document.createElement('div');
                 divItem.classList.add('foto-item');
                 
