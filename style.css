@@ -56,8 +56,8 @@ button:active {
 }
 
 button:hover{
-    background-color: #1aa6bf;
-    box-shadow: 0 0 8px #14e3dc,
+    background-color: #5cb5c4;
+    box-shadow: 0 0 8px #7dccda,
     0 0 15px #2a6765;
      transform-origin: bottom left;
    transform: rotate(-2deg);
@@ -108,7 +108,7 @@ h1{
 }
 
 .icons:hover{
-     box-shadow: 0 0 20px #14e3dc,
+     box-shadow: 0 0 20px #7dccda,
     0 0 15px #2a6765;
     border-radius: 10px;
     transform-origin: bottom left;

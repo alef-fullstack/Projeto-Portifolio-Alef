@@ -41,8 +41,8 @@ header {
     transition: .3s;
 }
 
-.button-voltar:hover{background-color: #1aa6bf;
-    box-shadow: 0 0 8px #14e3dc,
+.button-voltar:hover{background-color: #7dccda;
+    box-shadow: 0 0 8px #D5FBFD,
     0 0 15px #2a6765;
      transform: scale(1.05);
     transform-origin: bottom left;
@@ -87,7 +87,7 @@ hr {
    transform-origin: bottom left;
    transform: rotate(-5deg);
     
-    box-shadow: 0 0 8px #14e3dc,
+    box-shadow: 0 0 15px #7dccda,
     0 0 15px #2a6765;
     
 }
@@ -126,7 +126,7 @@ hr {
 
 .foto-item img:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 8px #14e3dc,
+    box-shadow: 0 0 15px #7dccda,
     0 0 15px #2a6765;
 }
 
@@ -145,10 +145,16 @@ hr {
     cursor: pointer;
     margin-bottom: 15px;
     font-weight: bold;
+    transition: .3s;
 }
 
 #btn-voltar-albuns:hover{
-    background: #086d8c;
+    background-color: #7dccda;
+    box-shadow: 0 0 8px #D5FBFD,
+    0 0 15px #2a6765;
+     transform: scale(1.05);
+    transform-origin: bottom left;
+   transform: rotate(-2deg);
 }
 
 /* Estilo da modal (lightbox) */
