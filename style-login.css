@@ -107,7 +107,7 @@ input:focus {
 button {
     border-radius: 25px;
     background: #0993bd;
-    color: #ffffff;
+    color: #000000;
     font-weight: 600;
     padding: 12px 45px;
     margin-top: 10px;
@@ -117,11 +117,12 @@ button {
 }
 
 button:hover {
+    background: #6bacc0;
     transform: scale(1.05);
     transform-origin: bottom left;
    transform: rotate(-2deg);
     
-    box-shadow: 0 0 8px #14e3dc,
+    box-shadow: 0 0 15px #7dccda,
     0 0 15px #2a6765;
 }
 
