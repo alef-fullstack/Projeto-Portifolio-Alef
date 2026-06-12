@@ -7,48 +7,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
-rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Dev Alef - Front-End</title>
 </head>
 
 <body>
-    
+
     <header>
         <a href="./login.html">
-            <button class="button-login">Login</button>
+            <button class="button-login">
+                Login
+            </button>
         </a>
-        <button>Inicio</button>
+
+        <a href="./sobre.html">
+        <button>
+            Sobre
+        </button>
+        </a>
+
         <a href="./galeria.html">
-            <button>Projetos</button>
+            <button>
+                Projetos
+            </button>
         </a>
-        <button>Sobre</button>
-        <button>Contato</button>
+
+
+        <li class="contact-menu">
+            <button id="contactBtn" class="nav-btn">
+                Contato
+            </button>
+
+            <div id="socialDropdown" class="social-dropdown">
+                <a href="https://github.com/alef-fullstack" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/alefsilva-dev/" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="https://instagram.com/dev.alef" target="_blank">
+                    Instagram
+                </a>
+
+                <a href="https://wa.me/5518996861835?text=Quero%20um%20or%C3%A7amento%20para%20um%20projeto!" target="_blank">
+                    WhatsApp
+                </a>
+            </div>
+        </li>
+
     </header>
     <p>Olá, eu sou <b>Alef Silva</b></p>
 
-<div>
-    <h1>Desenvolvedor Front-End</h1>
-    <p class="descrition">Desenvolvedor Front-End especializado em criar interfaces rápidas, modernas e responsivas, transformando ideias em experiências digitais intuitivas.</p>
-    <br>
-    <a href="https://wa.me/5518996861835?text=Quero%20um%20or%C3%A7amento%20para%20um%20projeto!">
-    <button class="orcament">Solicitar Orçamento</button>
-    </a>
-</div>
-
-<footer>
-    <div class="container-icons">
-        <img class="icons" src="./assets/icons/vscode.png">
-         <a href="https://formacoes.devclub.com.br/verify/8c66381518642041bf52467e962679ebe61fc2ea"><img class="icons" src="./assets/icons/html.png"></a>
-           <a href="https://formacoes.devclub.com.br/verify/b582e360be54960e0c852ff7b88497728ee576ec"><img class="icons" src="./assets/icons/css.png"></a>
-           <a href="https://formacoes.devclub.com.br/verify/1f2deafa151169c2616051b1893593d4b8df0e14"><img class="icons" src="./assets/icons/git.png"></a>
-            <a href="https://formacoes.devclub.com.br/verify/18cebde1bb28ac55c8886bee6edc515fa52710a9"><img class="icons" src="./assets/icons/js.png"></a>
-             <img class="icons" src="./assets/icons/react.png">
-              <img class="icons" src="./assets/icons/node.png">
+    <div>
+        <h1>Desenvolvedor Front-End</h1>
+        <p class="descrition">Desenvolvedor Front-End especializado em criar interfaces rápidas, modernas e responsivas,
+            transformando ideias em experiências digitais intuitivas.</p>
+        <br>
+        <a href="https://wa.me/5518996861835?text=Quero%20um%20or%C3%A7amento%20para%20um%20projeto!" target="_blank">
+            <button class="orcament">Solicitar Orçamento</button>
+        </a>
     </div>
-    <p class="direits">© 2026 Dev Alef. Todos os direitos reservados.</p></p>
-</footer>
+
+    <footer>
+        <div class="container-icons">
+            <img class="icons" src="./assets/icons/vscode.png">
+            <a href="https://formacoes.devclub.com.br/verify/8c66381518642041bf52467e962679ebe61fc2ea"><img
+                    class="icons" src="./assets/icons/html.png"></a>
+            <a href="https://formacoes.devclub.com.br/verify/b582e360be54960e0c852ff7b88497728ee576ec"><img
+                    class="icons" src="./assets/icons/css.png"></a>
+            <a href="https://formacoes.devclub.com.br/verify/1f2deafa151169c2616051b1893593d4b8df0e14"><img
+                    class="icons" src="./assets/icons/git.png"></a>
+            <a href="https://formacoes.devclub.com.br/verify/18cebde1bb28ac55c8886bee6edc515fa52710a9"><img
+                    class="icons" src="./assets/icons/js.png"></a>
+            <img class="icons" src="./assets/icons/react.png">
+            <img class="icons" src="./assets/icons/node.png">
+        </div>
+        <p class="direits">© 2026 Dev Alef. Todos os direitos reservados.</p>
+        </p>
+    </footer>
 
 </body>
+<script src="script.js"></script>
 
 </html>

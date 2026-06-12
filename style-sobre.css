@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, .75),
+            rgba(0, 0, 0, .85)),
+        url('./assets/background1_3k.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 10%;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo {
+    color: #00d9ff;
+    font-weight: 700;
+}
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+
+    padding: 0 10%;
+}
+
+.foto img {
+    width: 350px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0, 217, 255, .3);
+
+    box-shadow:
+        0 0 40px rgba(0, 217, 255, .2);
+}
+
+.texto {
+    max-width: 600px;
+}
+
+.texto span {
+    color: #00d9ff;
+}
+
+.texto h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.texto p {
+    color: #c8d0d9;
+    line-height: 1.8;
+}
+
+.timeline,
+.skills {
+    padding: 25px 10%;
+}
+
+.timeline h2,
+.skills h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.item {
+    background: rgba(255, 255, 255, .03);
+
+    margin-bottom: 20px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0, 217, 255, .15);
+}
+
+.item h3 {
+    color: #00d9ff;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.bar {
+    height: 10px;
+    background: #10161f;
+
+    border-radius: 20px;
+
+    margin-top: 10px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 20px;
+
+    background: #00d9ff;
+
+    box-shadow:
+        0 0 20px #00d9ff;
+}
+
+.cv-btn {
+    cursor: pointer;
+    width: 135px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: #000000;
+    background: #0993bd;
+    transition: .3s;
+}
+
+.cv-btn:hover{
+    background-color: #7dccda;
+    box-shadow: 0 0 8px #D5FBFD,
+    0 0 15px #2a6765;
+     transform: scale(1.05);
+    transform-origin: bottom left;
+   transform: rotate(-2deg);
+}
