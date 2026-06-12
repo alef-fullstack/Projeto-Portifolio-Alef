@@ -78,7 +78,7 @@ button:hover{
   flex-direction: column;
   gap: 10px;
 
-  min-width: 180px;
+  min-width: 210px;
 
   opacity: 0;
   transform: translateY(-20px);
@@ -168,6 +168,11 @@ h1{
    transform: rotate(-10deg);
    transition: transform .3s ease-in;
     
+}
+
+.icons-social{
+    width: 25px;
+    height: 25px;
 }
 
 .direits{
