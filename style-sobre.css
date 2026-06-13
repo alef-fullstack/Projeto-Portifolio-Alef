@@ -135,7 +135,7 @@ nav a {
 
 .cv-btn {
     cursor: pointer;
-    width: 135px;
+    width: 100px;
     height: 25px;
     border-radius: 10px;
     border: none;
@@ -146,6 +146,27 @@ nav a {
 }
 
 .cv-btn:hover{
+    background-color: #7dccda;
+    box-shadow: 0 0 8px #D5FBFD,
+    0 0 15px #2a6765;
+     transform: scale(1.05);
+    transform-origin: bottom left;
+   transform: rotate(-2deg);
+}
+
+.cv-btn2{
+    cursor: pointer;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: #000000;
+    background: #0993bd;
+    transition: .3s;
+}
+
+.cv-btn2:hover{
     background-color: #7dccda;
     box-shadow: 0 0 8px #D5FBFD,
     0 0 15px #2a6765;
