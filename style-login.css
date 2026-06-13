@@ -6,7 +6,7 @@
 }
 
 html{
-    background-image: url("assets/background1_3k.webp");
+    background-image: url("assets/background.png");
      background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -102,6 +102,14 @@ input {
 input:focus {
     outline: none;
     background: #eee;
+}
+
+.btn-voltar{
+    margin-right: 330px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 20px;
+
 }
 
 button {
