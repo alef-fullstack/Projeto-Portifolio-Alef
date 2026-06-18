@@ -10,27 +10,39 @@ const bancoDeFotos = {
         link: "https://alef-fullstack.github.io/Projeto-Conversor-de-Moedas/",
     fotos:[
         "./assets/img-projets/projet-convert-currency/desktop.png",
-        "./assets/img-projets/projet-convert-currency/funcionando.png", 
+        "./assets/img-projets/projet-convert-currency/mobile.png", 
+        "./assets/img-projets/projet-convert-currency/desktop-funcionando.png",
+        "./assets/img-projets/projet-convert-currency/mobile-funcionando.png", 
     ]},
     projeto3: {
         link: "https://alef-fullstack.github.io/Projeto-JOCKENPO/",
     fotos:[
         "./assets/img-projets/project-joken-po/desktop.png",
-        "./assets/img-projets/project-joken-po/funcionando.png",   
+        "./assets/img-projets/project-joken-po/mobile.png",   
+        "./assets/img-projets/project-joken-po/desktop-funcionando.png",
+        "./assets/img-projets/project-joken-po/mobile-funcionando.png",  
     ]},
-    projeto4: {
+     projeto4: {
+        link: "https://alef-fullstack.github.io/Projeto-Sorteador-de-Numeros/",
+    fotos: [
+        "./assets/img-projets/project-megasorte/desktop.png",
+        "./assets/img-projets/project-megasorte/mobile.png",
+        "./assets/img-projets/project-megasorte/desktop-funcionando.png",
+        "./assets/img-projets/project-megasorte/mobile-funcionando.png",   
+    ]},
+    projeto5: {
         link: "https://alef-fullstack.github.io/Projeto-WE-CARE/",
     fotos: [
         "./assets/img-projets/project-we-care/monitor.png",
         "./assets/img-projets/project-we-care/celular.png",   
     ]},
-    projeto5: {
+    projeto6: {
         link: "https://alef-fullstack.github.io/Projeto-Wide-Coverage-Location/",
     fotos: [
         "./assets/img-projets/project-wide-coverage-location/desktop.png",
         "./assets/img-projets/project-wide-coverage-location/mobile.png",    
     ]},
-    projeto6: {
+    projeto7: {
         link: "https://alef-fullstack.github.io/Projeto-Easy-Shopping/",
     fotos: [
         "./assets/img-projets/project-easy-shopping/desktop.png",

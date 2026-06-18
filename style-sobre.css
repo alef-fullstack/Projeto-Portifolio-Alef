@@ -83,6 +83,17 @@ nav a {
     line-height: 1.8;
 }
 
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
 .timeline,
 .skills {
     padding: 25px 10%;
@@ -96,39 +107,68 @@ nav a {
 
 .item {
     background: rgba(255, 255, 255, .03);
-
     margin-bottom: 20px;
-
     padding: 30px;
-
+    width: 200px;
     border-radius: 20px;
-
     border: 1px solid rgba(0, 217, 255, .15);
 }
 
-.item h3 {
+h3{
     color: #00d9ff;
+
+}
+.item:hover {
+    box-shadow: 0 0 8px #D5FBFD,
+    0 0 15px #2a6765;
+     transform: scale(1.05);
+    transform-origin: bottom left;
+   transform: rotate(-2deg);
+}
+
+h2{
+    margin-top: 50px;
 }
 
 .skill {
-    margin-bottom: 30px;
+    background: rgba(255, 255, 255, .03);
+
+    padding: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 217, 255, .15);
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    gap: 20px;
+}
+
+.skills{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+
+}
+
+.skill:hover {
+    box-shadow: 0 0 8px #D5FBFD,
+    0 0 15px #2a6765;
+     transform: scale(1.05);
+    transform-origin: bottom left;
+   transform: rotate(-2deg);
 }
 
 .bar {
     height: 10px;
     background: #10161f;
-
     border-radius: 20px;
-
     margin-top: 10px;
 }
 
 .fill {
     height: 100%;
     border-radius: 20px;
-
     background: #00d9ff;
-
     box-shadow:
         0 0 20px #00d9ff;
 }
