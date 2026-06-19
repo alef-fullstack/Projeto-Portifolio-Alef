@@ -3,8 +3,10 @@ const bancoDeFotos = {
     projeto1: {
         link: "https://alef-fullstack.github.io/CSS-Gerador-com-IA/",
     fotos: [
-        "./assets/img-projets/project-generator-ia/Desktop.png",
-        "./assets/img-projets/project-generator-ia/Funcionando.png",
+        "./assets/img-projets/project-generator-ia/desktop.png",
+        "./assets/img-projets/project-generator-ia/mobile.png",
+        "./assets/img-projets/project-generator-ia/desktop-funcionando.png",
+        "./assets/img-projets/project-generator-ia/mobile-funcionando.png",
     ]},
     projeto2: {
         link: "https://alef-fullstack.github.io/Projeto-Conversor-de-Moedas/",
