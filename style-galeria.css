@@ -6,14 +6,14 @@
 }
 
 body {
-    background-image: url("assets/background.png");
-    background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  height: 100vh; 
-  width: 100%;
-    color: #020c0c;
-    padding: 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, .75),
+            rgba(0, 0, 0, .85)),
+        url('./assets/background.png');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .projects{
@@ -211,3 +211,30 @@ hr {
     to { transform: scale(1); opacity: 1; }
 }
 
+
+@media screen and (max-width: 500px) {
+
+header{
+        margin: 10px 10px 20px  ;
+}
+
+#btn-voltar-albuns, #nome-album-ativo{
+    margin-left: 20px;
+}
+ 
+
+
+.card-album {
+    margin: 0 25px
+}
+
+.grid-fotos{
+    margin: 0 20px;
+}
+
+.button-voltar{
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+}
